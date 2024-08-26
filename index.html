@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet">
+    <title>Encriptador de texto</title>
+</head>
+<body>
+    <header>
+        <img class="logo" src="logoalura.png" alt="Logo de Alura">
+        <div class="barra-negra"></div>
+    </header>
+
+    <main>
+        <section class="text-section">
+          <h1 class="page-title">Encriptador de texto</h1>
+            <textarea class="text-area" id="inputTexto" placeholder="Por favor, ingresa el texto aquí."></textarea>
+            <div class="info-container">
+                <h6 class="informacion">Solo se aceptan letras minúsculas y sin acentos</h6>
+            </div>
+            <div class="button-container">
+                <button class="boton-encrip" onclick="encriptar()">Encriptar</button>
+                <button class="boton-desencrip" onclick="desencriptar()">Desencriptar</button>
+            </div>
+        </section>
+
+        <section class="text-section">
+            <textarea class="mensaje" id="outputTexto" readonly placeholder="No se encontró ningun mensaje, ingrese el texto que desea encriptar o desencriptar"></textarea>
+            <div class="button-container">
+                <button class="copiar" onclick="copiar()">Copiar</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+
+    <footer class="autor">
+      <p>Creado por Danna Gamboa</p>
+  </footer>
+
+</body>
+</html>
